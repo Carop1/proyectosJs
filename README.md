@@ -2,18 +2,31 @@
 
 ## 1.
 
+Está trabajando en un proyecto Git colaborativo con varias ramas y commits. Tu tarea es utilizar el comando git log con algunas opciones específicas para obtener un resumen gráfico de los últimos 5 commits en todas las ramas.
 
+git log --graph --oneline --all
 
-- `--graph`: Muestra una representación gráfica del historial de commits.
-- `--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)%Creset by %an'`: Define un formato personalizado para la salida.
-- `%Cred`: Establece el color rojo para el hash corto del commit.
-- `%h`: Muestra el hash corto del commit.
-- `%Creset`: Restablece el color al predeterminado.
+Este comando utiliza las siguientes opciones:
+
+- `--graph`: Muestra el historial de commits en forma de gráfico ASCII.
+- `--oneline`: Muestra cada commit en una sola línea para hacer el gráfico más compacto.
+- `--all`: Muestra todos los commits de todas las ramas.
+
+Resultado:
+
+![image-20240206181931571](C:\Users\USUARIO\AppData\Roaming\Typora\typora-user-images\image-20240206181931571.png)
+
+## 2.
+
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --all
+
+- `%Cred%h%Creset`: Muestra el hash corto del commit en color rojo.
 - `-%C(yellow)%d%Creset`: Muestra las referencias (ramas o tags) en las que está involucrado el commit en color amarillo.
 - `%s`: Muestra el mensaje del commit.
-- `%Cgreen`: Establece el color verde para la fecha relativa del commit.
-- `(%ar)`: Muestra la fecha relativa del commit.
-- `by %an`: Muestra el autor del commit.
+- `%Cgreen(%ar)%Creset`: Muestra la fecha relativa del commit en color verde.
+- `%C(bold blue)<%an>%Creset`: Muestra el nombre del autor en negrita y azul.
 - `--abbrev-commit`: Muestra el hash del commit como un identificador abreviado.
-- `-n 5`: Limita la salida a los últimos 5 commits.
-- `--all`: Incluye todas las ramas en la búsqueda
+
+Resultado:
+
+![image-20240206182638867](C:\Users\USUARIO\AppData\Roaming\Typora\typora-user-images\image-20240206182638867.png)
