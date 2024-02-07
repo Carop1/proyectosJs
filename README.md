@@ -12,7 +12,7 @@ Este comando utiliza las siguientes opciones:
 
 Resultado:
 
-![image-20240206181931571](C:\Users\USUARIO\AppData\Roaming\Typora\typora-user-images\image-20240206181931571.png)
+![image-20240206181931571](images/image-20240206181931571.png)
 
 ## 2.
 
@@ -27,7 +27,7 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 
 Resultado:
 
-![image-20240206182638867](C:\Users\USUARIO\AppData\Roaming\Typora\typora-user-images\image-20240206182638867.png)
+![image-20240206182638867](images/image-20240206182638867.png)
 
 ## 3. 
 
@@ -35,7 +35,7 @@ git config --global alias.last 'log -1 HEAD'
 
 Este comando agrega un alias llamado "last" al archivo de configuración global de Git.
 
-![image-20240206183918693](C:\Users\USUARIO\AppData\Roaming\Typora\typora-user-images\image-20240206183918693.png)
+![image-20240206183918693](images/image-20240206183918693.png)
 
 4.
 
@@ -43,10 +43,10 @@ git config --global alias.ec '!git config --global --edit'
 
 Este comando agrega un alias llamado "ec" que ejecuta el comando `git config --global --edit`. El signo de exclamación (`!`) al principio del alias indica que se ejecutará un comando del sistema
 
-![image-20240206184411231](C:\Users\USUARIO\AppData\Roaming\Typora\typora-user-images\image-20240206184411231.png)
+![image-20240206184411231](images/image-20240206184411231.png)
 
 ## 5.
 
 git log --graph --pretty=format:'%C(yellow)%h%Creset %C(red)%d%Creset \ %s \%C(bold blue)[%an]%Creset' --abbrev-commit --all
 
-![image-20240206190737160](C:\Users\USUARIO\AppData\Roaming\Typora\typora-user-images\image-20240206190737160.png)
+![image-20240206190737160](images/image-20240206190737160.png)
